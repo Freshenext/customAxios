@@ -16,6 +16,7 @@ Example:
 Let's say that you have a component that requires to do an HTTP request to an API in order to gather data that your component needs.
 If you import this function, you can use it like the following:
 
+```javascript
 import {customAxios} from './fileLocation';
 import {useState, useEffect} from 'react';
 export default function CompaniesComponent(){
@@ -39,3 +40,4 @@ export default function CompaniesComponent(){
     </select>
   </div>
 }
+```
