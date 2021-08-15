@@ -17,7 +17,7 @@ function getAuthorizationHeader(){
         return '';
 }
 
-export function getAxios(){
+export function customAxios(){
     const axiosInstance = axios.create({
         baseURL: urlDev,
         timeout: 5000,
