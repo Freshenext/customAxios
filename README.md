@@ -36,7 +36,8 @@ export default function CompaniesComponent(){
   
   return <div>
     <select>
-      {companies.map(company => (<option value={company.id}>{company.name}</option>))}
+      <option value="0">Select a Company</option>
+      {companies.length > 0 && companies.map(company => (<option value={company.id}>{company.name}</option>))}
     </select>
   </div>
 }
